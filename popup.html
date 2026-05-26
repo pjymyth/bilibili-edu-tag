@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>B站评论学历标签</title>
+  <style>
+    body {
+      width: 280px;
+      margin: 0;
+      padding: 12px 14px;
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 13px;
+      color: #222;
+      background: #fafafa;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 14px;
+      color: #00a1d6;
+    }
+    .desc {
+      color: #666;
+      font-size: 12px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 0;
+      border-bottom: 1px dashed #eee;
+    }
+    .tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .pct {
+      color: #888;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+    .footer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #999;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h3>📚 B站评论学历标签</h3>
+  <div class="desc">在评论区头像后随机注入一个学历标签，分布参考中国第七次人口普查数据。仅供娱乐。</div>
+  <div id="list"></div>
+  <div class="footer">
+    · 同一用户标签稳定（基于UID哈希）<br>
+    · 本插件不收集任何数据，不发送网络请求<br>
+    · 标签为程序随机生成，与现实无关
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

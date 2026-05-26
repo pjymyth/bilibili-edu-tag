@@ -1,0 +1,48 @@
+/* B站评论学历标签 - 样式 */
+
+.edu-tag-badge {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  margin-right: 2px;
+  padding: 1px 6px;
+  font-size: 11px;
+  line-height: 16px;
+  height: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  letter-spacing: 0.2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  cursor: help;
+  transition: transform 0.15s ease;
+}
+
+.edu-tag-badge:hover {
+  transform: scale(1.08);
+}
+
+/* 让高学历的标签有更明显的视觉权重 */
+.edu-tag-985 {
+  background: linear-gradient(135deg, #e91e63, #c2185b) !important;
+  box-shadow: 0 0 4px rgba(233, 30, 99, 0.4);
+}
+
+.edu-tag-211 {
+  background: linear-gradient(135deg, #ab47bc, #8e24aa) !important;
+}
+
+.edu-tag-master {
+  background: linear-gradient(135deg, #ef6c00, #e65100) !important;
+}
+
+.edu-tag-phd {
+  background: linear-gradient(135deg, #212121, #424242) !important;
+  color: #ffd54f !important;
+  box-shadow: 0 0 6px rgba(255, 213, 79, 0.5);
+  border: 1px solid #ffd54f;
+}
