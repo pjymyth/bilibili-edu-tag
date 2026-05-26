@@ -28,7 +28,7 @@ const EDU_DISTRIBUTION = [
   { id: 'vocational',label: '职高/中专', weight: 80,  color: '#a1887f', textColor: '#fff' },
   { id: 'senior',    label: '高中',       weight: 90,  color: '#26a69a', textColor: '#fff' },
   { id: 'college',   label: '大专',       weight: 110, color: '#42a5f5', textColor: '#fff' },
-  { id: 'bachelor',  label: '普通一本/二本', weight: 105, color: '#5c6bc0', textColor: '#fff' },
+  { id: 'bachelor',  label: '普通一本', weight: 105, color: '#5c6bc0', textColor: '#fff' },
   { id: '211',       label: '211',        weight: 32,  color: '#ab47bc', textColor: '#fff' },
   { id: '985',       label: '985',        weight: 22,  color: '#e91e63', textColor: '#fff' },
   { id: 'master',    label: '硕士',       weight: 8,   color: '#ef6c00', textColor: '#fff' },
