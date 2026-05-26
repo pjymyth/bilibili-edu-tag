@@ -21,14 +21,14 @@ jobs:
 
       - name: Package extension
         run: |
-          mkdir -p dist/bili-edu-tag
-          cp manifest.json content.js styles.css popup.html popup.js dist/bili-edu-tag/
-          cp -r icons dist/bili-edu-tag/
-          cd dist && zip -r ../bili-edu-tag-${{ steps.version.outputs.VERSION }}.zip bili-edu-tag
+          mkdir -p dist/bilibili-edu-tag
+          cp manifest.json content.js styles.css popup.html popup.js dist/bilibili-edu-tag/
+          cp -r icons dist/bilibili-edu-tag/
+          cd dist && zip -r ../bilibili-edu-tag-${{ steps.version.outputs.VERSION }}.zip bilibili-edu-tag
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: bili-edu-tag-*.zip
+          files: bilibili-edu-tag-*.zip
           generate_release_notes: true
           name: "Release ${{ steps.version.outputs.VERSION }}"
