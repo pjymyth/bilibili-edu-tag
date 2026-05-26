@@ -18,7 +18,20 @@ jobs:
       - name: Get version from tag
         id: version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
-
+      
+      - name: Verify manifest version matches tag
+        run: |
+          TAG_VERSION="${{ steps.version.outputs.VERSION }}"
+          TAG_VERSION_NUM="${TAG_VERSION#v}"
+          MANIFEST_VERSION=$(grep '"version"' manifest.json | head -1 | sed 's/.*"version": *"\([^"]*\)".*/\1/')
+          echo "Tag version (without v): $TAG_VERSION_NUM"
+          echo "Manifest version: $MANIFEST_VERSION"
+          if [ "$TAG_VERSION_NUM" != "$MANIFEST_VERSION" ]; then
+            echo "❌ 版本不一致！tag 是 $TAG_VERSION_NUM，manifest 是 $MANIFEST_VERSION"
+            exit 1
+          fi
+          echo "✅ 版本号一致"
+          
       - name: Package extension
         run: |
           mkdir -p dist/bilibili-edu-tag
