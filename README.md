@@ -35,11 +35,14 @@
 
 ### 开发者模式手动安装
 
-1. 下载本仓库（Code → Download ZIP，或 `git clone`）
+1. 下载本仓库（Code → Download ZIP，或 `git clone`）或者点击下载[ 最新版本](https://github.com/pjymyth/bilibili-edu-tag/releases/latest)
 2. 打开 Edge，地址栏输入 `edge://extensions/`（Chrome 用户用 `chrome://extensions/`）
 3. 打开右上角 **"开发人员模式"**
 4. 点击 **"加载解压缩的扩展"**，选择本仓库文件夹
 5. 打开任意 B 站视频页，滚动到评论区即可
+
+
+
 
 > 暂未上架 Edge Add-ons / Chrome 应用商店，欢迎 PR 协助。
 
