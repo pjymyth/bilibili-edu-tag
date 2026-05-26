@@ -1,3 +1,7 @@
+[![Latest Release](https://img.shields.io/github/v/release/pjymyth/bilibili-edu-tag?style=flat-square)](https://github.com/pjymyth/bilibili-edu-tag/releases/latest)
+[![License](https://img.shields.io/github/license/pjymyth/bilibili-edu-tag?style=flat-square)](./LICENSE)
+
+
 # Bilibili评论学历标签 
 
 > 一个 Edge / Chrome 浏览器扩展：在 B 站（哔哩哔哩）视频评论区，给每位评论用户的头像后随机加一个"最高学历"标签，分布参考中国第七次人口普查数据。
@@ -99,6 +103,8 @@ bili-edu-tag/
 2. 不构成对任何个人的身份评价或学历认证
 3. 不要根据本插件的标签做出任何现实判断
 4. 使用者应自行承担一切后果
+
+[![Downloads](https://img.shields.io/github/downloads/pjymyth/bilibili-edu-tag/total?style=flat-square)](https://github.com/pjymyth/bilibili-edu-tag/releases)
 
 ##  License
 
