@@ -31,6 +31,7 @@ jobs:
         with:
           files: bilibili-edu-tag-*.zip
           name: " ${{ steps.version.outputs.VERSION }}"
+          generate_release_notes: true
           body: |
             ##  B站评论学历标签 ${{ steps.version.outputs.VERSION }}
 
@@ -50,5 +51,3 @@ jobs:
             所有标签均为程序生成的伪随机结果，**不代表任何真实信息**，请勿据此对他人做出现实判断。
 
             ---
-
-            **完整变更记录**: https://github.com/pjymyth/bilibili-edu-tag/commits/${{ steps.version.outputs.VERSION }}
