@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "B站评论学历标签",
-  "version": "1.1.5",
-  "description": "在B站视频评论区，给每个评论用户随机分配一个符合中国学历分布的最高学历标签（仅供娱乐）",
+  "name": "B站评论学历标签 & 额外倍速",
+  "version": "1.2.0",
+  "description": "B站增强：(1) 评论区给每位用户随机加学历标签（娱乐用）；(2) 播放器倍速菜单加入 3x/3.5x/4x/5x/10x 等选项，并支持 Alt+数字 快捷切换。",
   "permissions": ["storage"],
   "host_permissions": [
     "https://www.bilibili.com/*",
@@ -23,10 +23,21 @@
       "css": ["styles.css"],
       "run_at": "document_idle",
       "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.bilibili.com/video/*",
+        "https://www.bilibili.com/bangumi/play/*",
+        "https://www.bilibili.com/list/*",
+        "https://www.bilibili.com/medialist/play/*"
+      ],
+      "js": ["speed.js"],
+      "run_at": "document_idle",
+      "all_frames": false
     }
   ],
   "action": {
-    "default_title": "B站评论学历标签",
+    "default_title": "B站评论学历标签 & 额外倍速",
     "default_popup": "popup.html"
   },
   "icons": {

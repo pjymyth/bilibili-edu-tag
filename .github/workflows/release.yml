@@ -35,7 +35,7 @@ jobs:
       - name: Package extension
         run: |
           mkdir -p dist/bilibili-edu-tag
-          cp manifest.json content.js styles.css popup.html popup.js dist/bilibili-edu-tag/
+          cp manifest.json content.js styles.css popup.html popup.js speed.js dist/bilibili-edu-tag/
           cp -r icons dist/bilibili-edu-tag/
           cd dist && zip -r ../bilibili-edu-tag-${{ steps.version.outputs.VERSION }}.zip bilibili-edu-tag
 
